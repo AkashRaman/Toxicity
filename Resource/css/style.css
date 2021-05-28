@@ -123,10 +123,10 @@ a {
 }
 
 #section-cover h2,
-.section-cause h2,
-.section-origin h2,
-.section-effect h2,
-.section-solution h2,
+.section-pretending h2,
+.section-moveon h2,
+.section-speakup h2,
+.section-footdown h2,
 .footer-title {
   width: fit-content;
   font-size: 240%;
@@ -141,22 +141,22 @@ a {
   border-color: #42b0ff;
 }
 
-.section-cause h2,
-.section-origin h2,
-.section-effect h2,
-.section-solution h2 {
+.section-pretending h2,
+.section-moveon h2,
+.section-speakup h2,
+.section-footdown h2 {
   border-color: #00ff19;
 }
 
-.section-origin h2 {
+.section-moveon h2 {
   margin-bottom: 55px;
 }
 
 #section-cover h2:hover,
 .footer-title:hover,
-.section-origin h2:hover,
-.section-effect h2:hover,
-.section-solution h2:hover {
+.section-moveon h2:hover,
+.section-speakup h2:hover,
+.section-footdown h2:hover {
   transform: scale(1.05);
 }
 
@@ -187,7 +187,7 @@ a {
 }
 
 #section-synopsis-detail h2,
-.solution-h2 {
+.footdown-h2 {
   width: fit-content;
   position: relative;
   display: block;
@@ -205,7 +205,7 @@ a {
 }
 
 #section-synopsis-detail h2:hover,
-.solution-h2:hover {
+.footdown-h2:hover {
   transform: translateX(52.5%);
 }
 
@@ -251,9 +251,9 @@ header {
       rgba(0, 0, 0, 0.9),
       rgba(0, 0, 0, 0.9)
     ),
-    url(img/loneliness.jpg);
+    url(img/toxicity.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: top left;
   background-repeat: no-repeat;
   z-index: 10;
 }
@@ -494,9 +494,9 @@ nav {
       rgba(255, 255, 255, 0),
       rgba(255, 255, 255, 0)
     ),
-    url(img/Loneliness-2.jpg);
+    url(img/cover.jpg);
   background-size: cover;
-  background-position: right;
+  background-position: center;
   background-repeat: no-repeat;
   -webkit-box-shadow: 0 0px 10px 0px rgba(32, 33, 36, 0.75);
   box-shadow: 0 0px 10px 0px rgba(32, 33, 36, 0.75);
@@ -554,30 +554,6 @@ nav {
   transform: scaleX(-1);
 }
 
-.synopsis-para-row {
-  margin-top: -13px;
-  background-image: linear-gradient(
-      to left,
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0),
-      rgba(255, 255, 255, 0.75),
-      rgba(255, 255, 255, 1),
-      rgba(255, 255, 255, 1),
-      rgba(255, 255, 255, 1),
-      rgba(255, 255, 255, 1),
-      rgba(255, 255, 255, 1),
-      rgba(255, 255, 255, 1),
-      rgba(255, 255, 255, 1),
-      rgba(255, 255, 255, 1)
-    ),
-    url(img/synopsis.jpg);
-  background-size: contain;
-  background-position: right;
-  background-repeat: no-repeat;
-}
-
 #section-synopsis div:last-child div {
   float: left;
   text-align: right;
@@ -625,28 +601,28 @@ nav {
   padding: 30px;
 }
 
-/*----------------------------------------------- SECTION-origin,cause,effect  ---------------------------------------------------*/
+/*----------------------------------------------- SECTION-moveon,pretending,speakup  ---------------------------------------------------*/
 
-.section-cause,
-.section-origin {
+.section-pretending,
+.section-moveon {
   padding: 55px 2.5%;
   box-shadow: 0px 21px 10px -18px rgba(32, 33, 36, 0.75) inset;
 }
 
-#section-cause-link,
-#section-origin-link,
-#section-effect-link {
+#section-pretending-link,
+#section-moveon-link,
+#section-speakup-link {
   margin-top: 0 !important;
   box-shadow: 0 0px 10px 2px rgba(32, 33, 36, 0.75);
   z-index: 10;
 }
-#section-origin-link,
-#section-effect-link {
+#section-moveon-link,
+#section-speakup-link {
   height: 54px;
 }
 
-.section-cause div li h3,
-.section-effect h3 {
+.section-pretending div li h3,
+.section-speakup h3 {
   width: fit-content;
   margin: 30px 0 15px 0;
   padding: 0 10px 0 0;
@@ -654,14 +630,14 @@ nav {
   transition: all 0.2s;
 }
 
-.section-cause div li h3:hover,
-.section-effect h3:hover {
+.section-pretending div li h3:hover,
+.section-speakup h3:hover {
   border-color: #00ff19;
 }
 
-/*----------------------------------------------- SECTION-origin  ---------------------------------------------------*/
+/*----------------------------------------------- SECTION-moveon  ---------------------------------------------------*/
 
-.section-origin {
+.section-moveon {
   background-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0),
@@ -673,69 +649,69 @@ nav {
       rgba(17, 17, 17, 1),
       rgb(17, 17, 17)
     ),
-    url(img/Loneliness-origin.png);
+    url(img/move-on.jpg);
   background-size: cover;
+  background-position: left;
   background-attachment: fixed;
   background-repeat: no-repeat;
   color: #fff;
 }
 
-.section-origin div {
+.section-moveon div {
   float: right;
 }
 
-.origin-para-c,
-.cause-para-c {
+.moveon-para-c,
+.pretending-para-c {
   width: 62.5%;
   margin: 0 auto;
   text-align: center;
 }
 
-.origin-para-c:last-child,
-.cause-para-c:last-child {
+.moveon-para-c:last-child,
+.pretending-para-c:last-child {
   margin-top: 55px;
 }
 
-.origin-para-rs,
-.cause-para-rs {
+.moveon-para-rs,
+.pretending-para-rs {
   width: 75%;
   margin-top: 40px;
   margin-left: 25%;
   text-align: right;
 }
 
-.origin-para-ls,
-.cause-para-ls {
+.moveon-para-ls,
+.pretending-para-ls {
   width: 75%;
   margin-top: 40px;
   text-align: left;
 }
 
-/*----------------------------------------------- SECTION-CAUSE  ---------------------------------------------------*/
+/*----------------------------------------------- SECTION-pretending  ---------------------------------------------------*/
 
-.section-cause {
-  background-image: url(img/modern-city2.jpg);
+.section-pretending {
+  background-image: url(img/pretending.jpg);
   background-size: cover;
+  background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
 
-.section-cause div {
+.section-pretending div {
   position: relative;
   text-align: right;
   height: fit-content;
   margin: 0;
   padding: 55px;
   width: 45%;
-  border-radius: 31px;
-  background-color: rgba(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.9);
   text-align: center;
   box-shadow: 0 2px 5px 2px rgba(64, 60, 67, 0.26);
   transition: all 0.3s;
 }
 
 .message-ls {
-  border-top-left-radius: 0px !important;
   margin-top: 50px !important;
   text-align: left !important;
   transform-origin: top left;
@@ -746,26 +722,12 @@ nav {
 }
 
 .message-ls:first-child {
-  padding: 22.5px;
+  padding: 55px;
 }
 
-.message-ls:before {
-  content: "";
-  width: 0px;
-  height: 0px;
-  position: absolute;
-  border-left: 15px solid transparent;
-  border-right: 15px solid #fff;
-  border-top: 15px solid #fff;
-  border-bottom: 15px solid transparent;
-  left: -14px;
-  top: 0px;
-}
 .message-rs {
-  border-top-right-radius: 0px !important;
   margin: 50px 0 0 55% !important;
   text-align: right !important;
-  background-color: #42b0ff !important;
   transform-origin: top right;
 }
 
@@ -773,50 +735,37 @@ nav {
   transform: scale(1.05) !important;
 }
 
-.message-rs:before {
-  content: "";
-  width: 0px;
-  height: 0px;
-  position: absolute;
-  border-left: 15px solid #42b0ff;
-  border-right: 15px solid transparent;
-  border-top: 15px solid #42b0ff;
-  border-bottom: 15px solid transparent;
-  right: -14px;
-  top: 0px;
-}
-
-.section-cause div img {
+.section-pretending div img {
   transform-origin: center;
   transition: all 0.3s;
 }
 
-.section-cause div img:hover {
+.section-pretending div img:hover {
   transform: scale(1.05);
 }
 
-.cause-para-c {
+.pretending-para-c {
   margin: 0 auto;
   text-align: center;
 }
 
-.cause-para-c:last-child {
+.pretending-para-c:last-child {
   margin-top: 55px;
 }
 
-.cause-para-rs {
+.pretending-para-rs {
 }
 
-.cause-para-ls {
+.pretending-para-ls {
 }
 
-/*----------------------------------------------- SECTION-EFFECT  ---------------------------------------------------*/
+/*----------------------------------------------- SECTION-speakup  ---------------------------------------------------*/
 
-.section-effect {
+.section-speakup {
   padding: 0px;
 }
 
-.effect-1 {
+.speakup-1 {
   box-shadow: 0px 21px 10px -18px rgba(32, 33, 36, 0.75) inset;
   background-image: linear-gradient(
       to left,
@@ -831,11 +780,11 @@ nav {
     ),
     url(img/effect.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat;
 }
 
-.effect-2 {
+.speakup-2 {
   box-shadow: 0px -11px 10px -18px rgba(0, 0, 0, 0.75) inset;
   background-image: linear-gradient(
       to right,
@@ -848,14 +797,14 @@ nav {
       rgba(255, 255, 255, 1),
       rgba(255, 255, 255, 1)
     ),
-    url(img/effect-2.jpg);
+    url(img/recognising.jpg);
   background-size: cover;
-  background-position: left;
+  background-position: bottom left;
   background-repeat: no-repeat;
   text-align: right;
 }
 
-.effect-ls {
+.speakup-ls {
   width: 100%;
   margin: 0;
   padding: 55px 2.5% 0px 2.5%;
@@ -917,7 +866,7 @@ nav {
   background-repeat: no-repeat;
 }
 
-.effect-rs {
+.speakup-rs {
   width: 100%;
   margin: 0;
   padding: 0px 2.5% 55px 2.5%;
@@ -979,43 +928,43 @@ nav {
   background-repeat: no-repeat;
   text-align: right;
 }
-.effect-rs div {
+.speakup-rs div {
   float: right;
 }
 
-.effect-sep {
+.speakup-sep {
   width: 100%;
   height: 55px;
 }
 
-/*----------------------------------------------- SECTION-SOLUTION  ---------------------------------------------------*/
+/*----------------------------------------------- SECTION-footdown  ---------------------------------------------------*/
 
-.section-solution {
+.section-footdown {
   background-color: rgb(255, 250, 250);
   box-shadow: 0 0px 10px 2px rgba(32, 33, 36, 0.75);
   padding: 55px 0%;
 }
 
-#solution-main-para {
+#footdown-main-para {
   width: 62.5%;
   margin: 0 auto;
   text-align: center;
 }
 
-.solution-para-container {
+.footdown-para-container {
   margin: 55px 0 0 0;
   background-color: #181818;
   padding: 55px 0%;
   position: relative;
 }
 
-.solution-para-container:first-child {
+.footdown-para-container:first-child {
   margin-top: 55px;
 }
 
-.solution-support-1,
-.solution-support-3,
-.solution-support-5 {
+.footdown-support-1,
+.footdown-support-3,
+.footdown-support-5 {
   background-color: #fff;
   width: 85%;
   margin: 0;
@@ -1028,19 +977,19 @@ nav {
   transform: translate(-41.2%, 0);
 }
 
-.solution-support-3,
-.solution-support-5 {
+.footdown-support-3,
+.footdown-support-5 {
   margin: 55px 0 0 0;
 }
 
-.solution-support-ls-hover {
+.footdown-support-ls-hover {
   width: calc(91.5% + 15px) !important;
   border-left: 7.5vw solid #fff !important;
   border-right: 7.5px solid #00ff19 !important;
 }
 
-.solution-support-2,
-.solution-support-4 {
+.footdown-support-2,
+.footdown-support-4 {
   background-color: #fff;
   width: 85%;
   margin: 55px 0 0 0;
@@ -1053,14 +1002,14 @@ nav {
   left: 0%;
 }
 
-.solution-support-rs-hover {
+.footdown-support-rs-hover {
   left: calc(50% - 4.3px);
   width: calc(92.5% + 15px);
   border-left: 7.5px solid #00ff19;
   border-right: 7.5vw solid #fff;
 }
 
-.solution-conclusion {
+.footdown-conclusion {
   width: 100%;
   margin: 55px 0 0 0;
   padding: 9.5% 2.5% 2% 2.5%;
@@ -1074,22 +1023,22 @@ nav {
   transition: all 0.3s;
 }
 
-.solution-conclusion-hover {
+.footdown-conclusion-hover {
   transform: scale(1.02);
 }
 
-.solution-conclusion h3 {
+.footdown-conclusion h3 {
   width: 50%;
   margin: 0 auto;
   line-height: 1.2rem;
-  padding: 5px;
-  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.75);
   clip-path: polygon(50% 0, 100% 0%, 100% 100%, 50% 100%);
 }
 
 #h3-white {
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.75);
   clip-path: polygon(0% 0, 50% 0%, 50% 100%, 0 100%);
   position: relative;
   transform: translate(0, -100%);
@@ -1215,10 +1164,10 @@ footer {
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background: black;
+  background: #00ff19;
   box-shadow: inset 0 0 20px rgba(245, 245, 245, 0.671);
 }
 ::-webkit-scrollbar-track {
-  margin-top: 80px;
+  margin-top: 55px;
   border-radius: 10px;
 }
